@@ -1,0 +1,138 @@
+/* глобальные стили */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+  color: #212121;
+}
+button {
+  cursor: pointer;
+}
+/* логотип */
+header .logo,
+footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #212121;
+}
+header .logo span,
+footer .logo span {
+  color: #2196f3;
+}
+/* верхняя навигация */
+header .top-right-nav,
+header .top-left-nav {
+  font-weight: 500;
+  font-size: 14px;
+  list-style: none;
+}
+header .top-right-nav li > a:hover,
+header .top-left-nav li > a:hover {
+  color: #2196f3;
+}
+header .top-left-nav li > a {
+  color: #757575;
+}
+/* баннер */
+main .content {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
+main .content h1 {
+  font-weight: 900;
+  font-size: 44px;
+  color: #ffffff;
+}
+main .content button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  padding: 10px 32px;
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+}
+/* особенности */
+.hide {
+  display: none;
+}
+.quality,
+.aboutwork > ul,
+.ourteam,
+section .main-nav,
+.portfolio {
+  list-style: none;
+}
+.quality li > h3 {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.quality li > p {
+  color: #757575;
+  font-size: 14px;
+}
+/* чем мы занимаемся */
+.aboutwork h2,
+.ourteam h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+/* наша команда */
+.ourteam li > h3 {
+  font-weight: 500;
+}
+.ourteam li > p,
+.portfolio li > p {
+  color: #757575;
+}
+/* подвал */
+footer {
+  width: 1600px;
+  height: 252px;
+  font-size: 14px;
+  background-color: #2f303a;
+}
+footer .logo,
+footer a {
+  color: #ffffff;
+}
+footer address ul {
+  list-style: none;
+  line-height: 1.8;
+}
+footer address ul li:nth-last-of-type(-n + 2) a {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ----  СТРАНИЦА ПОРТФОЛИО ---- */
+
+/* главная навигация - портфолио */
+section .main-nav li > button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border-style: none;
+}
+section .main-nav li > button:hover {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* портфолио */
+.portfolio h2 {
+  font-size: 18px;
+}
