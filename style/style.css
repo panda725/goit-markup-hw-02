@@ -6,6 +6,8 @@
   --main-color-links: #212121;
   --main-color-subtitle: #757575;
   --hover-color-links: #2196f3;
+  --background-color-dgrey: #2f303a;
+  --background-color-lgrey: #f5f4fa;
 }
 
 /* глобальные стили */
@@ -13,15 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color-text);
   font-size: 14px;
-  line-height: 1.4;
   letter-spacing: 0.03em;
-}
-a {
-  text-decoration: none;
-  color: var(--main-color-links);
-}
-button {
-  cursor: pointer;
 }
 
 /* логотип */
@@ -29,8 +23,13 @@ header .logo,
 footer .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
 }
-
+header a {
+  text-decoration: none;
+  color: var(--main-color-links);
+}
 header .logo span,
 footer .logo span {
   color: var(--hover-color-links);
@@ -41,6 +40,8 @@ header .top-right-nav,
 header .top-left-nav {
   font-weight: 500;
   list-style: none;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 header .top-right-nav li > a:hover,
 header .top-left-nav li > a:hover,
@@ -54,7 +55,7 @@ header .top-left-nav li > a {
 
 /* баннер */
 main .content {
-  background-color: #2f303a;
+  background-color: var(--background-color-dgrey);
   width: 1600px;
   height: 600px;
 }
@@ -65,18 +66,21 @@ main .content h1 {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--second-color-text);
+  line-height: 1.36;
 }
 main .content button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
   padding: 10px 32px;
   background-color: #2196f3;
   color: var(--second-color-text);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
+  cursor: pointer;
 }
 
 /* особенности */
@@ -94,9 +98,11 @@ section .main-nav,
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  line-height: 1.14;
 }
 .quality li > p {
   color: var(--main-color-subtitle);
+  line-height: 1.71;
 }
 
 /* чем мы занимаемся */
@@ -105,36 +111,40 @@ section .main-nav,
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+  line-height: 1.16;
 }
 
 /* наша команда */
 .ourteam {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-lgrey);
 }
 .ourteam li > h3 {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.18;
 }
-.ourteam ul li > p,
-.portfolio li a > p {
+.ourteam ul li > p {
   font-size: 16px;
   color: var(--main-color-subtitle);
+  line-height: 1.18;
 }
 
 /* подвал */
 footer {
   width: 1600px;
   height: 252px;
-  background-color: #2f303a;
+  background-color: var(--background-color-dgrey);
 }
 footer .logo,
 footer a {
   color: var(--second-color-text);
+  text-decoration: none;
 }
 footer address ul {
   list-style: none;
   line-height: 1.8;
   font-style: normal;
+  line-height: 1.71;
 }
 .footer-links li:nth-last-of-type(-n + 2) a {
   color: var(--main-color-subtitle);
@@ -147,6 +157,10 @@ footer address ul {
 /* ----  СТРАНИЦА ПОРТФОЛИО ---- */
 
 /* главная навигация - портфолио */
+main a {
+  text-decoration: none;
+  color: var(--main-color-links);
+}
 section .main-nav li > button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -156,6 +170,8 @@ section .main-nav li > button {
   background: #f5f4fa;
   border-radius: 4px;
   border-style: none;
+  cursor: pointer;
+  line-height: 1.62;
 }
 section .main-nav li > button:hover,
 section .main-nav li > button:focus {
@@ -166,7 +182,15 @@ section .main-nav li > button:focus {
 }
 
 /* портфолио */
+
 .portfolio li a > h2 {
   font-weight: 700;
   font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio li a > p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--main-color-subtitle);
 }
